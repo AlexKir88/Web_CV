@@ -1,14 +1,29 @@
+.print {
+    position: absolute;
+    z-index: 1000;
+    left: 15vw;
+    background-color: white;
+    border: none;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-image: url('./1640875180_1-abrakadabra-fun-p-tekstura-dereva-visokogo-razresheniya-3.jpg');
 }
 header {
-    width: 70vw;
+    width: 37vw;
     padding-top: 1vw;
     position: relative;
+    padding-bottom: 1vw;
 }
 main {
+    padding-bottom: 1vw;
+}
+footer {
     padding-bottom: 1vw;
 }
 h1 {
@@ -16,8 +31,10 @@ h1 {
 }
 h2 {
     color: blueviolet;
+    font-size: 2.5vh;
+    margin: 0.2vh 0;
 }
-.persen, .contfoto_foto, .skills, .project, .experience, .education {
+.persen, .contfoto_foto, .skills, .project, .experience, .education, .projectTechnologies {
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
     background-color: rgb(255, 255, 255);
 }
@@ -28,9 +45,6 @@ h2 {
     width: 100%;
     height: 100%;
     top: 0;
-}
-.sheet {
-    padding-top: 5vw;
 }
 .contCircleUp {
     margin: 0;
@@ -52,54 +66,59 @@ h2 {
 .sheet {
     position: relative;
     background-color: rgb(255, 255, 255);
-    width: 60vw;
-    margin: 1vw auto;
+    width: 37vw;
+    max-height: 110vh;
+    margin: 1vh auto;
     padding: 0;
 }
 
 .flex_cont {
     display: flex;
-    margin: 1vw 2vw ;
+    margin: 0 1.5vw ;
 }
 .persen {
-    width: 33vw;
+    width: 20vw;
     float: left;
     padding: 0.5vw;
-    height: 12vw;
+    height: 23vh;
     position: relative;
     border-radius: 1vw;
     background-color: white;
 }
 .left_border > * {
     margin: 0.2vW;
-    height: 1.5vw;
+    height: 3vh;
 }
 .persen_whishedPosition {
-    height: 2vw;
+    height: 4vh;
     margin: 0;
     padding: 0;
+    font-size: 3vh;
 }
 .left_border {
     border-left: 5px solid aqua;
     margin: 0.5vw;
     padding: 0 0.5vw;
-    height: 9vw;
+    height: 18vh;
+    font-size: 2vh;
 
 }
 .persen_github {
     margin: 0;
-    height: 1.6rem;
+    height: 3vh;
+   
 }
 .person_linkGitHub {
     display: inline-block;
     border-radius: 1vw;
     background-color: aqua;
-    height: 1.5rem;
-    width: 8vw;
+    max-height: 6vh;
+    max-width: 10vw;
     border: 1px solid beige;
     text-align: center;
     vertical-align: bottom;
     padding-top: 0.1vw;
+    font-size: 1.8vh;
 }
 .person_linkGitHub a {
     color: black;
@@ -109,90 +128,103 @@ h2 {
     color: white;
 }
 .contfoto {
-    width: 25vw;
-    height: 13vw;
+    width: 9vw;
+    height: 24vh;
     margin: 0;
+    padding: 0.5vw;
 }
 .contfoto_foto {
-    position: relative;
-    right: 0;
-    height: 13vw;
-    width: 10vw;
+    margin-left: 4vw;
+    height: 24vh;
+    width: 9vw;
     border-radius: 1vw;
-    margin-left: 12vw;
 }
 .skills {
-    width: 20vw;  
-    height: 12vw;
-    margin: 0.1vw 0;
+    width: 14vw;  
+    height: 19vh;
+    margin:0.1vw 0 0.1vw 1vw;
     padding: 0.7vw 2vw;
     border-radius: 1vw;
     position: relative;
+    font-size: 2vh;
 }
 .conteinerSkills {
     display: flex;
     flex-direction: column;
     width: 13vw;
     flex-wrap: wrap ;
-    height: 8vw;
+    height: 15vh;
     border-left: 5px solid aqua;
-    margin: 0.5vw;
+    margin: 0.5vw 0;
     padding: 0 0.5vw;
 }
 .project {
-    width: 28vw;
-    margin: 0.1vw 0 0.1vw 3vw ;
-    height: 12vw;
-    padding: 0.7vw 2vw;
+    width: 14.5vw;
+    margin: 0.1vw 0 0.7vw  ;
+    height: 18vh;
+    padding: 1vw 1vh;
     border-radius: 1vw;
     position: relative;
+    font-size: 2.5vh;
 }
-
+.projectTechnologies {
+    display: none;
+}
+.project_info {
+    width: 13vw;
+}
+.project_info:hover  .projectTechnologies {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 14vh;
+    z-index: 1000;
+    position: absolute;
+    border-radius: 1vw;
+    font-size: 1.7vh;
+}
 .leftBorderProjectd {
     border-left: 5px solid aqua;
     margin: 0.5vw;
     padding: 0 0.5vw;
-    height: 8vw;
+    height: 12vh;
 }
-.projectTechnologies {
-    width: 27vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 7vw;
-}
+
 .skillbox {
     display: flex;
-    width: 8vw;
+    width: 9vw;
 }
 .skill_JS, .skill_HTML, .skill_CSS, .skill_React,
 .skill_Redux, .skill_SCSS, .skill_YT, .skill_TLG,
 .skill_Adaptive, .skill_AJAX, .skill_other, .skill_GIT, 
 .skill_GitHub, .skill_BAM, .skill_TS, .skill_1С {
     display: inline-block;
-    margin: 0.3vw;
+    margin: 0.5vh;
     box-shadow: 5px;
     opacity: 0.9;
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 1vh;
+    height: 1vh;
 }
 .project_button {
-    display: inline-block;
     border-radius: 1vw;
     background-color: aqua;
-    height: 1.5rem;
+    min-height: 3vh;
+    max-height: 6vh;
     width: 8vw;
     border: 1px solid beige;
     text-align: center;
     vertical-align: bottom;
     padding-top: 0.1vw;
+    font-size: 1.8vh;
+    cursor: pointer;
 }
 
 .project_button:hover {
     color: white;
 }
 .project_link {
-    font-size: small;
+    font-size: 1.8vh;
 }
 
 .skill_JS {
@@ -241,27 +273,32 @@ h2 {
     background-color: rgb(60, 60, 63);
 }
 .experience {
-    padding:  0.7vw 2vw;
-    width: 25vw;
-    height: 19vw;
+    padding:  0.7vw 0.2vw;
+    width: 18vw;
+    height: 35vh;
     border-radius: 1vw;
     position: relative;
+    font-size: 2vh;
 }
 .position {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    height: 16vw
+    width: 17vw;
+    height: 33vh;
+    font-size: 1.9vh;
 }
 .positionName {
     float: left;
 }
+.positionName h3 {
+    margin: 0.1vw 0;
+}
 .responsibilities {
-    width: 26vw;
+    width: 15vw;
     float: right;
     border-left: 5px solid aqua;
     margin: 0.5vw;
-    height: 10vw;
+    height: 22vh;
 }
 .responsibilities_list {
     margin: 0.5vw;
@@ -269,7 +306,7 @@ h2 {
 }
 
 .project_name {
-    margin: 0;
+    margin: 0 0 0.5vw 0;
 }
 
 .education_scholl, .education_speciality {
@@ -278,33 +315,34 @@ h2 {
 
 .education {
     padding: 0.7vw 1vw;
-    width: 25vw;
-    margin-left: 2.5vw;
-    height: 19vw;
+    width: 14vw;
+    margin-left: 1vw;
+    height: 35vh;
     border-radius: 1vw;
     position: relative;
+    font-size: 1.8vh;
 }
 .education_speciality {
-    float: right;
     border-left: 5px solid aqua;
+    width: 11vw;
     margin: 1vw;
     padding: 0 0.5vw;
-    height: 2.5vw;
+    height: 6vh;
 }
 .education_sertificats {
     border-left: 5px solid aqua;
-    width: 18vw;
+    width: 13vw;
     margin: 1vw;
     padding: 0 0.5vw;
-    height: 2.5vw;
+    height: 6vh;
 }
 .contCircleDown {
     margin: 0;
     padding: 0;
     overflow: hidden;
     position: absolute;
-    width: 15vw;
-    height: 15vw;
+    width: 13vw;
+    height: 32vh;
     right: 0;
     bottom: 0;
 }
