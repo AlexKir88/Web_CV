@@ -1,4 +1,4 @@
-export const tlgToken = '***'; 
+export const tlgToken = '6223368335:AAHUVcNazJVpAVCIv5QK0kj-6x0SCjnGxSY'; 
 export const tlgIdChat = '-887540689';
 
 let isOpen;
