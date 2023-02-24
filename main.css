@@ -35,7 +35,7 @@ h2 {
     font-size: 2.5vh;
     margin: 0.2vh 0;
 }
-.persen, .contfoto_foto, .skills, .project, .experience, .education, .projectTechnologies, .feedback {
+.persen, .contfoto_foto, .skills, .project, .experience, .education, .projectTechnologies, .about, .feedback {
     box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
     background-color: rgb(255, 255, 255);
 }
@@ -68,7 +68,7 @@ h2 {
     position: relative;
     background-color: rgb(255, 255, 255);
     width: 37vw;
-    max-height: 150vh;
+    max-height: 160vh;
     margin: 1vh auto;
     padding: 0;
 }
@@ -94,7 +94,7 @@ h2 {
     height: 4vh;
     margin: 0;
     padding: 0;
-    font-size: 3vh;
+    font-size: 2.8vh;
 }
 .left_border {
     border-left: 5px solid aqua;
@@ -106,7 +106,7 @@ h2 {
 }
 .persen_github {
     margin: 0;
-    height: 3vh;
+    height: 2.3vh;
    
 }
 .person_linkGitHub {
@@ -139,6 +139,7 @@ h2 {
     height: 24vh;
     width: 9vw;
     border-radius: 1vw;
+    object-fit: cover;
 }
 .skills {
     width: 14vw;  
@@ -367,6 +368,9 @@ h2 {
 .feedback_formFeedback {
     width: 33.5vw;
 }
+.inputs {
+    width: 30vw;
+}
 .feedback_name, .feedback_contact {
     display: inline-block;
     width: 9vw;
@@ -387,7 +391,6 @@ h2 {
 .feedback_feedbackData {
     border-left: 5px solid aqua;
     width: 28vw;
-    /* margin: 1vw; */
     padding: 0 0.5vw;
     height: 13vh;
 }
@@ -404,11 +407,29 @@ h2 {
     font-size: 1.8vh;
     cursor: pointer;
 }
+.about {
+    padding: 0.7vh 0.2vw;
+    width: 34vw;
+    margin-top: 3vh;
+    height: auto;
+    border-radius: 1vw;
+    position: relative;
+    font-size: 1.8vh;
+}
+.about_border {
+    width: 32vw;
+    border-left: 5px solid aqua;
+    margin: 0.5vw;
+    padding: 0 0.5vw;
+    height: auto;
+    font-size: 2vh;
+    position: relative;
+}
 
 @media only screen and (max-width: 1000px) {
     .sheet {
         width: 100vw;
-        height: max-content;
+        max-height: 200vh;
         margin: 0;
     }
 
@@ -416,41 +437,44 @@ h2 {
         width: 100vw;
     }
     .persen {
-        width: 53vw;
-        height: max-content;
+        width: 66vw;
+        height: auto;
+        padding: 0;
+        margin: 3vw;
     } 
     .left_border {
-        width: 44vw;
-        height: max-content;
+        width: 56vw;
+        height: auto;
     }
     .contfoto{
-        width: 35vw;
+        width: 30vw;
         margin: 0;
     } 
     .contfoto_foto {
-        width: 35vw;
+        width: 30vw;
         margin: 0;
     }
     .project {
         width: 38vw;
+        margin: 3vw;
     }
     .project_info,
     .project_info:hover .projectTechnologies {
         width: 37vw;
+        height: max-content;
     }
     .conteinerSkills {
         width: 40vw;
         height: min-content;
     }
    .skills {
-        width: 45vw;
-        margin-right: 0;
+        width: 46vw;
+        margin: 3vw;
         height: min-content;
     }
     .skillbox {
         width: 22vw;
     }
-    
     
     .project_button {
         width: 25vw;
@@ -458,6 +482,7 @@ h2 {
     .experience{
         width: 48.5vw;
         height: min-content;
+        margin: 3vw;
     }
     .position,
     .responsibilities{
@@ -465,21 +490,22 @@ h2 {
         height: min-content;
     }
     .education {
-        width: 40vw;
+        width: 39vw;
         height: min-content;
+        margin: 3vw;
     }
     .education_speciality,
     .education_sertificats {
-        width: 39vw;
+        width: 38vw;
         height: min-content;
     }
     .feedback{
-        width: 91vw;
+        width: 94vw;
         height: 25vh;
-        margin: 1vw 0;
+        margin: 3vw;
     }
     .feedback_formFeedback{
-        width: 90vw;
+        width: 94vw;
         height: max-content;
 
     }
@@ -490,11 +516,10 @@ h2 {
        width: 25vw; 
     }
     .person_linkGitHub {
-        max-width: 20vw;
+        max-width: 40vw;
         max-height: 10vh;
 
     }
-    
     .print {
         display: none;
     }
@@ -511,5 +536,196 @@ h2 {
         padding: 0;
         width: min-content;
     }
+    .feedback_name,
+    .feedback_contact {
+        width: 30vw;
+        display: inline;
+    }
+    .about {
+        width: 94vw;
+        height: auto;
+        margin: 3vw
+    }
 
+    .about_border {
+        width: 90vw;
+        height: auto;
+    }
+
+}
+@media print {
+    .contCircleUp {
+        width: 45vw;
+        height: 60vw;
+    }
+
+    .circleUp {
+        border-radius: 50%;
+        width: 60vw;
+        height: 60vw;
+        left: -30vw;
+    }
+    .sheet {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .header {
+        width: 100vw;
+    }
+
+    .persen {
+        width: 62vw;
+        height: 21vh;
+        padding: 0;
+        margin: 0 2vw 1vw;
+    }
+
+    .left_border {
+        width: 52vw;
+        height: 16vh;
+        margin-left: 2vw;
+    }
+
+    .contfoto {
+        margin: 0;
+        width: 25vw;
+        height: 21vh;
+        margin-left: 11vw;
+    }
+
+    .contfoto_foto {
+        width: 25vw;
+        height: 21vh;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .project {
+        width: 38vw;
+        margin: 1vw 2vw;
+    }
+
+    .project_info,
+    .project_info:hover .projectTechnologies {
+        width: 37vw;
+        height: max-content;
+    }
+    .skills {
+        width: 47vw;
+        height: 19vh;
+        margin: 1vw 2vw;
+    }
+    .conteinerSkills {
+        display: flex;
+        width: 44vw;
+        height: 15vh;
+    }
+    .skillbox {
+        width: 20vw;
+        overflow: hidden;
+    }
+
+    .project_button {
+        width: 25vw;
+    }
+
+    .experience {
+        width: 50vw;
+        height: min-content;
+        margin: 1vw 2vw;
+    }
+
+    .position,
+    .responsibilities {
+        width: 48vw;
+        height: min-content;
+        margin-left: 0.7vw;
+    }
+
+    .education {
+        width: 39.5vw;
+        height: min-content;
+        margin: 1vw 2vw;
+    }
+
+    .education_speciality,
+    .education_sertificats {
+        width: 38vw;
+        height: min-content;
+    }
+
+    .feedback {
+        width: 94vw;
+        height: 25vh;
+        margin: 1vw 2vw;
+    }
+
+    .feedback_formFeedback {
+        width: 94vw;
+        height: max-content;
+
+    }
+    .feedback_content {
+        width: 85vw;
+    }
+
+    .feedback_send {
+        width: 25vw;
+    }
+
+    .person_linkGitHub {
+        max-width: 40vw;
+        max-height: 10vh;
+    }
+    .print {
+        display: none;
+    }
+
+    .table {
+        display: none;
+    }
+
+    .flex_cont {
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    header,
+    main,
+    footer {
+        margin: 0;
+        padding: 0;
+        width: min-content;
+    }
+    .feedback {
+        display: none;
+    }
+    .about {
+        width: 96vw;
+        height: auto;
+        margin: 1vw 2vw;
+        padding: 0;
+    }
+    .about h2 {
+        margin: 0;
+    }
+
+    .about_border {
+        width: 92vw;
+        height: auto;
+        margin-left: 1.1vw;
+    }
+    .contCircleDown {
+        width: 25vw;
+        height: 20vh;
+    }
+
+    .circleDown {
+        border-radius: 50%;
+        width: 50vw;
+        height: 50vw;
+    }
 }
