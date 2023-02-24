@@ -6,8 +6,9 @@
     <title>Александр Кирсанов</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <link rel="stylesheet" type="text/css" media="all" href="main.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    <script src='main.js'></script>
+    <!-- <script src='main.js'></script> -->
 </head>
 <body>
     <div class="sheet">
@@ -15,7 +16,7 @@
             <div class="circleUp"></div>
         </div>
     <header> 
-        <button class="print" title="Print" onclick="print_CV()">
+        <button class="print" title="Print" >
             <img src="./icons8-открывание-дверцы-принтера-96.png" width="30"></img>
         </button>
         <div class="flex_cont">
@@ -46,7 +47,7 @@
                 </div>
             </div>
             <div class="contfoto">
-                <img class="contfoto_foto" />
+                <img class="contfoto_foto" src="./foto.png" />
             </div>
         </div>
     </header>
@@ -290,25 +291,22 @@
                 </div>
             </div>
         </div>
+        <div class="flex_cont">
+            <div class="feedback">
+                <form class="feedback_formFeedback">
+                    <h3>Отправить сообщение</h3>
+                    <div class="feedback_feedbackData">
+                        <div>Имя<input class='feedback_name' type="text" placeholder='введите ваше имя...' name='nameUser' />
+                        Контакт<input class='feedback_contact' type="text" placeholder='введите контактные данные...'
+                                name='contact' /></div>
+                        <textarea class='feedback_content' placeholder='текст сообщения...'name='content'></textarea>
+                        <button class="feedback_send" type='button'>Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </footer>
-    
-    <script>
-      
-        function print_CV() {
-            let img = document.createElement('img');
-            img.src = "./Print_CV.png";
-            img.width = 0;
-            document.body.append(img);
-            const win = window.open();
-            win.document.write('<img src="./Print_CV.png" />');
-            setTimeout(() => {
-                win.print();
-                img.remove();
-                win.close();
-            },10);
-            // setTimeout(() => win.close(),200);
-        }
-    </script>
+    <script src='main.js' type="module"></script>
 </div>
 </body>
 </html>
