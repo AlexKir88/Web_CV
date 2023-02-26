@@ -458,10 +458,8 @@ h2 {
         width: 38vw;
         margin: 3vw;
     }
-    .project_info,
     .project_info:hover .projectTechnologies {
-        width: 37vw;
-        height: max-content;
+        display: none;
     }
     .conteinerSkills {
         width: 40vw;
