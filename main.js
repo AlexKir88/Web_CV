@@ -14,4 +14,4 @@ const sendMessage = (e) => {
 const buttonSend = document.querySelector(".feedback_formFeedback");
 buttonSend.onclick = sendMessage;
 const buttonPrint = document.querySelector('.print');
-buttonPrint.onclick= print_CV ;
+buttonPrint.onclick = print_CV ;
